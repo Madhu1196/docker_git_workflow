@@ -28,4 +28,5 @@ jobs:
     - name: Install dependencies
       run: |
         python HelloWorld.py
+        python a.py
     
