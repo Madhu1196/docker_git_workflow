@@ -46,4 +46,4 @@ WORKDIR /
 
 COPY entrypoint.py /entrypoint.py
 
-ENTRYPOINT ["python3", "entrypoint.py"]
+ENTRYPOINT ["python3", "/entrypoint.py"]
