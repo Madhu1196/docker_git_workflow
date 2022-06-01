@@ -40,8 +40,8 @@ ENV PATH $PATH:/root/google-cloud-sdk/bin
 
 RUN mkdir ~/.aws && touch ~/.aws/credentials && chmod 777 ~/.aws/credentials
 
+WORKDIR /root
 
+COPY entrypoint.py /root/entrypoint.py
 
-COPY entrypoint.py /entrypoint.py
-
-ENTRYPOINT ["python3", "entrypoint.py"]
+ENTRYPOINT ["python3", "/root/entrypoint.py"]
