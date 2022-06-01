@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: git-wrkflow-action
-      uses: actions/main@v1
+      uses: actions/checkout@v1
       
     
