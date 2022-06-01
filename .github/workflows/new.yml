@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: git-wrkflow-action
-      uses: Madhu1196/docker_git_workflow@v2
+      uses: Madhu1196/docker_git_workflow@v3
       
     
