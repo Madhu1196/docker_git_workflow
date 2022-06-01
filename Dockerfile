@@ -44,4 +44,4 @@ RUN mkdir ~/.aws && touch ~/.aws/credentials && chmod 777 ~/.aws/credentials
 
 #COPY . .
 
-#ENTRYPOINT ["python3", "entrypoint.py"]
+ENTRYPOINT ["python3", "entrypoint.py"]
