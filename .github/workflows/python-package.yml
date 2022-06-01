@@ -17,13 +17,14 @@ jobs:
     runs-on: ubuntu-latest
     
 
-    steps:
-    
-    - name: 'docker'
-      uses: 'Dockerfile'
+    # action runner (deinterlace_test:latest image)
+    runs:
+      using: 'docker'
+      image: 'Dockerfile'
+
   
-    - name: execute py script
-      run: |
-        python entrypoint.py
+      - name: execute py script
+        run: |
+          python entrypoint.py
         
     
