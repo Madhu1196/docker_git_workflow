@@ -152,19 +152,20 @@ def pod_start(namespace,pod_name,uuid):
 
 
 def Main():
-    folder_path = sys.argv[1]
-    generateKeyFile(folder_path)
-    project_id,cluster_name,cluster_region,provider,uuid,player_rls,taint_name,pod_type,helm_repo_uname,helm_repo_pwd,helm_chart_version,availability_zone,s3_access_id,s3_access_secret = get_data_from_json(folder_path)
-    configure_cluster(cluster_name,cluster_region,project_id)
-    namespace,pod_name = get_namespace(uuid)
-    access_helm_repo(helm_repo_uname,helm_repo_pwd)
-    delete_pod(pod_name,namespace)
-    delete_namespace(namespace)
-    create_namespace(namespace)
-    create_pod(pod_name,folder_path,namespace,project_id,availability_zone,provider,uuid,player_rls,pod_type,taint_name,helm_chart_version)
-    pod_start(namespace,pod_name,uuid)
-    delete_pod(pod_name,namespace)
-    pod_stop(namespace,pod_name)
-   delete_namespace(namespace)
+#    folder_path = sys.argv[1]
+#    generateKeyFile(folder_path)
+#    project_id,cluster_name,cluster_region,provider,uuid,player_rls,taint_name,pod_type,helm_repo_uname,helm_repo_pwd,helm_chart_version,availability_zone,s3_access_id,s3_access_secret = get_data_from_json(folder_path)
+#    configure_cluster(cluster_name,cluster_region,project_id)
+#    namespace,pod_name = get_namespace(uuid)
+#    access_helm_repo(helm_repo_uname,helm_repo_pwd)
+#    delete_pod(pod_name,namespace)
+#    delete_namespace(namespace)
+#    create_namespace(namespace)
+#    create_pod(pod_name,folder_path,namespace,project_id,availability_zone,provider,uuid,player_rls,pod_type,taint_name,helm_chart_version)
+#    pod_start(namespace,pod_name,uuid)
+#    delete_pod(pod_name,namespace)
+#    pod_stop(namespace,pod_name)
+#   delete_namespace(namespace)
+    print("Hello world from entrypoint script")
 
 Main()
