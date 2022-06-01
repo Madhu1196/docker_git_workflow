@@ -12,10 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: git-wrkflow-action
-<<<<<<< HEAD
       uses: Madhu1196/docker_git_workflow@v1
-=======
-      uses: actions/checkout@v1
->>>>>>> 89a7958e16c0606af42b90c5da727427c0d14daf
       
     
