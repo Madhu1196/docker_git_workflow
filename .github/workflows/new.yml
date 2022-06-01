@@ -14,6 +14,4 @@ jobs:
     - name: git-wrkflow-action
       uses: actions/docker-wrkflow@v1
       
-    -name: Get the output
-     run: |
-        python HelloWorld.py
+    
