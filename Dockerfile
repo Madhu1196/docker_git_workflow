@@ -40,7 +40,7 @@ ENV PATH $PATH:/root/google-cloud-sdk/bin
 
 RUN mkdir ~/.aws && touch ~/.aws/credentials && chmod 777 ~/.aws/credentials
 
-#WORKDIR deinterlace/
+WORKDIR /
 
 #COPY . .
 
