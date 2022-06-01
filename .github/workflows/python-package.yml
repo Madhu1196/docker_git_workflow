@@ -29,6 +29,6 @@ jobs:
           python -m pip install --upgrade pip
     - name: execute py script
       run: |
-        python HelloWorld.py
-        python a.py
+        python entrypoint.py
+        #python a.py
     
