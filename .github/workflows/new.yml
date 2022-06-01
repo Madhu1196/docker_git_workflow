@@ -1,0 +1,19 @@
+name: main-yml-for-action
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - name: git-wrkflow-action
+      uses: actions/docker-wrkflow@v1
+      
+    -name: Get the output
+     run: |
+        python HelloWorld.py
