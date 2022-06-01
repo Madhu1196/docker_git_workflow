@@ -1,0 +1,28 @@
+# action name
+name: 'docker-run'
+
+author: 'Madhu'
+
+# action description
+description: 'Creates docker from given dockerfile'
+
+# branding
+branding:
+  icon: terminal
+  color: green
+
+  #inputs:
+  #command:
+  #  description: 'ops_config input file'
+  #  required: true
+
+
+# action runner (deinterlace_test:latest image)
+runs:
+  using: 'docker'       
+  image: 'Dockerfile'
+  #args:
+  #   - ${{ inputs.command }}
+ 
+
+
