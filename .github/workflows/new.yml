@@ -1,0 +1,17 @@
+name: main-yml-for-action
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - name: git-wrkflow-action
+      uses: Madhu1196/docker_git_workflow@v3
+      
+    
